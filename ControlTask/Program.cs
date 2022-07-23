@@ -23,5 +23,5 @@ string[] FillStrArrayAuto(int MinArrLen, int MaxArrLen, int MinStrLen, int MaxSt
     }
     return words;
 }
-string[] str = FillStrArrayAuto(2,6,2,10);
+string[] strarr = FillStrArrayAuto(2,6,2,10);
 

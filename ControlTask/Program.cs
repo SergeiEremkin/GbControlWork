@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿string[] StringCheckerForThreeSymb(string[] words)
+{
+
+    for (int i = 0; i < words.Length; i++)
+    {
+        if (words[i].Length > 3)
+        {
+            words[i] = String.Empty;
+        }
+    }
+    return words;
+}

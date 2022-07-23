@@ -23,5 +23,19 @@ string[] FillStrArrayAuto(int MinArrLen, int MaxArrLen, int MinStrLen, int MaxSt
     }
     return words;
 }
-string[] strarr = FillStrArrayAuto(2,6,2,10);
+string[] StringCheckerForThreeSymb(string[] words)
+{
+
+    for (int i = 0; i < words.Length; i++)
+    {
+        if (words[i].Length > 3)
+        {
+            words[i] = String.Empty;
+        }
+    }
+    return words;
+}
+string[] str = FillStrArrayAuto(2,6,2,10);
+StringCheckerForThreeSymb(str);
+
 

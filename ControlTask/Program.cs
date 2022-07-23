@@ -11,5 +11,17 @@
     }
     return new String(strSymbols);
 }
-string str = CreateRandomString(2,5);
-System.Console.WriteLine(str);
+
+string[] FillStrArrayAuto(int MinArrLen, int MaxArrLen, int MinStrLen, int MaxStrLen)
+{
+    Random random = new Random();
+    int WordsArrLen = random.Next(MinArrLen, MaxArrLen);
+    string[] words = new string[WordsArrLen];
+    for (int i = 0; i < words.Length; i++)
+    {
+        words[i] = CreateRandomString(MinStrLen, MaxStrLen);
+    }
+    return words;
+}
+string[] str = FillStrArrayAuto(2,6,2,10);
+

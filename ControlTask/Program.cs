@@ -11,7 +11,6 @@
     }
     return new String(strSymbols);
 }
-
 string[] FillStrArrayAuto(int MinArrLen, int MaxArrLen, int MinStrLen, int MaxStrLen)
 {
     Random random = new Random();
@@ -35,7 +34,15 @@ string[] StringCheckerForThreeSymb(string[] words)
     }
     return words;
 }
-string[] str = FillStrArrayAuto(2,6,2,10);
-StringCheckerForThreeSymb(str);
-
-
+void PrintArray(string[] words)
+{
+    foreach (string word in words)
+    {
+        System.Console.Write($"{word} ");
+    }
+    System.Console.WriteLine();
+}
+string[] strArr = FillStrArrayAuto(2,6,2,10);
+PrintArray(strArr);
+StringCheckerForThreeSymb(strArr);
+PrintArray(strArr);
